@@ -79,6 +79,11 @@
 	damage = 25
 	armor_penetration = -50
 
+/obj/item/projectile/bullet/pistol/hunter // good for animals, less for people
+	damage = 5
+	SA_bonus_damage = 30 // 35 total on animals
+	SA_vulnerability = SA_ANIMAL
+
 /obj/item/projectile/bullet/pistol/medium // .45 (and maybe .40 if it ever gets added) caliber security pistols. Balance between capacity and power.
 	fire_sound = 'sound/weapons/gunshot3.ogg' // Snappier sound.
 	damage = 25
@@ -91,9 +96,19 @@
 	damage = 30
 	armor_penetration = -50
 
+/obj/item/projectile/bullet/pistol/medium/hunter // good for animals, less for people
+	damage = 10
+	SA_bonus_damage = 35 // 45 total on animals
+	SA_vulnerability = SA_ANIMAL
+
 /obj/item/projectile/bullet/pistol/strong // .357 and .44 caliber stuff. High power pistols like the Mateba or Desert Eagle. Sacrifice capacity for power.
 	fire_sound = 'sound/weapons/gunshot4.ogg'
 	damage = 60
+
+/obj/item/projectile/bullet/pistol/strong/hunter // good for animals, less for people
+	damage = 25
+	SA_bonus_damage = 65 // 90 total on animals. elephant revolver, anyone?
+	SA_vulnerability = SA_ANIMAL
 
 /obj/item/projectile/bullet/pistol/rubber/strong // "Rubber" bullets for high power pistols.
 	fire_sound = 'sound/weapons/gunshot3.ogg' // Rubber shots have less powder, but these still have more punch than normal rubber shot.
@@ -127,6 +142,12 @@
 	embed_chance = 0
 	sharp = FALSE
 	check_armour = "melee"
+
+/obj/item/projectile/bullet/shotgun/hp
+	name = "expanding slug"
+	armor_penetration = -40 // arguably not as bad as using actual hollowpoints against armor
+	SA_bonus_damage = 30 // 80 total against
+	SA_vulnerability = SA_ANIMAL
 
 //Should do about 80 damage at 1 tile distance (adjacent), and 50 damage at 3 tiles distance.
 //Overall less damage than slugs in exchange for more damage at very close range and more embedding

@@ -101,6 +101,9 @@
 	desc = "A 9mm hollow-point bullet casing."
 	projectile_type = /obj/item/projectile/bullet/pistol/hp
 
+/obj/item/ammo_casing/a9mm/hunter
+	desc = "A 9mm hunting bullet casing."
+	projectile_type = /obj/item/projectile/bullet/pistol/hunter
 
 /obj/item/ammo_casing/a9mm/flash
 	desc = "A 9mm flash shell casing."
@@ -163,6 +166,10 @@
 	projectile_type = /obj/item/projectile/bullet/pistol/medium/hp
 	matter = list(MAT_STEEL = 60, MAT_PLASTIC = 15)
 
+/obj/item/ammo_casing/a45/hunter
+	desc = "A .45 hunting bullet casing."
+	projectile_type = /obj/item/projectile/bullet/pistol/medium/hunter
+
 /*
  * 10mm
  */
@@ -179,6 +186,11 @@
 	projectile_type = /obj/item/projectile/ion/small
 	icon_state = "empcasing"
 	matter = list(MAT_STEEL = 130, MAT_URANIUM = 100)
+
+/obj/item/ammo_casing/a10mm/hunter
+	name = "10mm hunting round"
+	desc = "A 10mm cartridge with a hunting bullet packed into the casing."
+	projectile_type = /obj/item/projectile/bullet/pistol/medium/hunter
 
 /*
  * 12g (aka shotgun ammo)
@@ -255,6 +267,14 @@
 	caliber = "12g"
 	projectile_type = /obj/item/projectile/scatter/flechette
 	matter = list(MAT_STEEL = 360, MAT_PLASTEEL = 100)
+
+/obj/item/ammo_casing/a12g/hp_hunter
+	name = "expanding-point shotgun slug"
+	desc = "A 12 gauge expanding-point slug."
+	icon_state = "slshell"
+	caliber = "12g"
+	projectile_type = /obj/item/projectile/bullet/shotgun
+	matter = list(MAT_STEEL = 360)
 
 /*
  * 7.62mm
